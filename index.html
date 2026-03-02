@@ -1,13 +1,24 @@
+<!-- HTML (index.html)
+
+A heading for the experience
+An <img> element with an id to display the current scene's image
+A <p> element with an id to display the current scene's text
+A placeholder <div> with an id of choices-container where choice buttons will eventually go (leave it empty for now)
+A <script> tag linking to script.js -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src = "script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <h1>My Interactive Story</h1>
+    <img id="scene-image" src="/images/" alt="Scene Image">
+    <p id="scene-text"></p>
+    <div id="choices-container"></div>
+    <script src = "script.js" defer></script>
 </body>
 </html>
