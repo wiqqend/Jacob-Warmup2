@@ -23,6 +23,7 @@
 // moments in the house. Each node should follow the same shape as your exampleNode from Part 2. The choices 
 // arrays don't need to point anywhere yet — they just need to exist as lists of label strings.
 
+
 // Part 4: A Display Function
 
 // Write a function called displayNode that takes an index number as its argument, retrieves the corresponding 
@@ -34,12 +35,44 @@
 
 function describeRoom(roomName) {
     if (roomName === "Entrance") {
-
+        document.getElementById("sceneimage").src = "images/entrance.jpg";
+        document.getElementById("caption").textContent = "entrance text";
     } else if (roomName === "Hallway") {
-
+        document.getElementById("sceneimage").src = "images/hallway.jpg";
+        document.getElementById("caption").textContent = "hallway text";
     } else if (roomName === "Kitchen") {
-    
+        document.getElementById("sceneimage").src = "images/kitchen.jpg";
+        document.getElementById("caption").textContent = "kitchen text";
     } else if (roomName === "Landing") {
-
+        document.getElementById("sceneimage").src = "images/landing.jpg";
+        document.getElementById("caption").textContent = "landing text";
     }
 }
+let exampleNode = {
+    image: "images/entrance.jpg",
+    text: "You are standing in the entrance of a spooky house. The air is thick with dust and the floorboards creak beneath your feet.",
+    choices: ["Go down the hallway", "Open the kitchen door", "Climb the stairs to the landing"]
+};
+
+let storyNodes = [
+    {
+        image: "images/entrance.jpg",
+        text: "You are standing in the entrance of a spooky house. The air is thick with dust and the floorboards creak beneath your feet.",
+        choices: ["Go down the hallway", "Open the kitchen door", "Climb the stairs to the landing"]
+    },
+    {
+        image: "images/hallway.jpg",
+        text: "You are in a long, dimly lit hallway. The walls are lined with old portraits that seem to watch you as you move.",
+        choices: ["Go to the kitchen", "Go to the landing", "Return to entrance"]
+    },
+    {
+        image: "images/kitchen.jpg",
+        text: "You are in a dusty kitchen. The stove is covered in grime and there's an old, broken refrigerator in the corner.",
+        choices: ["Go back to hallway", "Search for food", "Investigate the pantry"]
+    },
+    {
+        image: "images/landing.jpg",
+        text: "You are on a narrow landing overlooking a dark staircase. There's a small window that lets in some moonlight.",
+        choices: ["Go back to hallway", "Descend the stairs", "Look through window"]
+    }
+];
