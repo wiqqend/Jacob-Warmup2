@@ -1,6 +1,11 @@
-/* CSS (style.css)
 
-Center the image and text on the page
-Set a consistent width for the image
-Style the text for readability (consider max-width, line height, and font) */
+scene-image {
+    width: 1080px; 
+}
 
+scene-text {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    max-width: 1080px;
+    margin: 0 auto;
+}
