@@ -1,11 +1,21 @@
+/* Center the image and text on the page
+Set a consistent width for the image
+Style the text for readability (consider max-width, line height, and font) */
 
-scene-image {
-    width: 1080px; 
-}
-
-scene-text {
+body {
     text-align: center;
-    font-family: Arial, sans-serif;
-    max-width: 1080px;
+    width: 600px;
+    margin: 0 auto  ;
+    line-height: 1.5;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+
+#scene-image {
+    width: 600px;
+
+}
+#scene-text {
+    font-size: 18px;
     margin: 0 auto;
+    line-height: 1.5;
+    font-size: 18px;
 }
